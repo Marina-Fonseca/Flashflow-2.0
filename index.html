@@ -1,0 +1,66 @@
+        <!-- Seção de edição de card (fica oculta até clicar em editar) -->
+        <div id="edit-card-section" class="edit-card-section" style="margin-top:20px; display:none;">
+            <h2>Editar card atual</h2>
+            <form id="edit-card-form">
+                <input type="text" id="edit-question" placeholder="Nova pergunta" required />
+                <input type="text" id="edit-answer" placeholder="Nova resposta" required />
+                <button type="submit">Salvar Alterações</button>
+                <button type="button" id="cancel-edit-btn">Cancelar</button>
+            </form>
+        </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Flashcards:</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo-principal">FlashFlow</h1>
+        <div class="category-select-section">
+            <label for="category-select"><strong>Categoria:</strong></label>
+            <select id="category-select">
+                <option value="programacao">Programação</option>
+                <option value="ingles">Inglês</option>
+            </select>
+        </div>
+        <div id="card-counter" class="card-counter">
+            Card 1 de 10
+        </div>
+        <div id="flashcard" class="flashcard">
+            <div class="flashcard-inner">
+                <div class="card-face front">
+                    <p id="question-text" class="question-text">Carregando pergunta...</p>
+                </div>
+                <div class="card-face back">
+                    <p id="answer-text" class="answer-text">Carregando resposta...</p>
+                </div>
+            </div>
+        </div>
+        <p class="texto-entre">Click no card para ver a resposta.</p>
+        <div class="button-row">
+            <button id="next-button" class="next-button small-btn">
+                Próximo Card
+            </button>
+            <button id="restart-button" class="next-button small-btn">
+                Voltar para o início
+            </button>
+        </div>
+        <div class="button-row" style="margin-bottom: 0; margin-top: 8px;">
+            <button id="edit-card-button" class="next-button small-btn" style="background:#1b0452; color:#f9f7f7;">Editar Card Atual</button>
+            <button id="delete-card-button" class="next-button small-btn" style="background:#1b0452; color:#fff;">Apagar Card Atual</button>
+        </div>
+        <div id="add-card-section" class="add-card-section">
+            <h2>Adicionar novo card</h2>
+            <form id="add-card-form">
+                <input type="text" id="new-question" placeholder="Pergunta" required />
+                <input type="text" id="new-answer" placeholder="Resposta" required />
+                <button type="submit">Adicionar Card</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

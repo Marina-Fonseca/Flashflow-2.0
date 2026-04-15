@@ -1,0 +1,209 @@
+    .add-card-section button[type="submit"] {
+        background: #1b0452;
+        color: #fff;
+        font-family: 'Sora', sans-serif;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 18px;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+        transition: background 0.3s, transform 0.3s;
+        margin: 0 auto;
+        display: block;
+    }
+    .add-card-section button[type="submit"]:hover {
+        background: #280590;
+        transform: scale(1.05);
+    }
+    .add-card-section h2 {
+        color: #1b0452;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+    .category-select-section label {
+        color: #1b0452;
+        font-weight: bold;
+    }
+    .button-row {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .small-btn {
+        padding: 10px 18px;
+        font-size: 15px;
+        min-width: 120px;
+        box-sizing: border-box;
+    }
+    .category-select-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 18px;
+        gap: 10px;
+    }
+
+    #category-select {
+        font-size: 1.1em;
+        padding: 6px 18px;
+        border-radius: 8px;
+        border: 1px solid #c9c8ce;
+        background: #f8fafc;
+        color: #1b0452;
+        outline: none;
+        transition: border 0.2s;
+    }
+    #category-select:focus {
+        border: 1.5px solid #1b0452;
+    }
+
+    form input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        border: 1px solid #c9c8ce;
+        font-size: 1em;
+        outline: none;
+        transition: border 0.2s;
+        background: #fff;
+    }
+    form input[type="text"]:focus {
+        border: 1.5px solid #1b0452;
+    }
+    body {
+    background: linear-gradient(135deg, #f3f4f6 0%, #c9c8ce 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+}
+.titulo-principal {
+    text-align: center;
+    font-size: 32px;
+    color: #1b0452;
+    margin-bottom: 6px;
+    font-family: 'Sora', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 22px;
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px 0 #0002;
+    padding: 32px 20px 28px 20px;
+    margin-top: 0;
+}
+
+.card-counter {
+    font-size: 20px;
+    color: #fff;
+    background: #1b0452;
+    padding: 12px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    margin-bottom: 8px;
+    font-family: 'Sora', sans-serif;
+    margin-top: 8px
+}
+
+.flashcard {
+    width: 100%;
+    height: 260px;
+    cursor: pointer;
+    perspective: 1000px;
+    position: relative;
+}
+
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+.card-face.front {
+    background-color: #f8fafc;
+    color: #1b0452;
+}
+
+.card-face.back {
+    background-color: #1b0452;
+    color: #fff;
+    transform: rotateY(180deg);
+}
+.question-text, .answer-text {
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+} 
+
+.texto-entre {
+    text-align: center;
+    font-size: 18px;
+    color: #1b0452;
+    margin: 0px;
+    font-family: 'Sora', sans-serif;
+}
+
+.next-button {
+    background: #1b0452;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 2px;
+}
+
+.next-button:hover {
+    background: #280590;
+    transform: scale(1.05);
+}
